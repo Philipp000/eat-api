@@ -78,6 +78,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "deepl"
+version = "1.2.1"
+description = "Python library for the DeepL API."
+category = "main"
+optional = false
+python-versions = ">=3.6.2,<4"
+
+[package.dependencies]
+requests = ">=2,<3"
+
+[[package]]
 name = "distlib"
 version = "0.3.3"
 description = "Distribution utilities"
@@ -415,7 +426,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "449e1a4d36155f7696d801bde37653400769ceb8819198740fb74ebb0712ebbd"
+content-hash = "fc0d9238afff639f206bbfbe6507b2637fce5c0c050f46e3664f51c075ad2fb5"
 
 [metadata.files]
 astroid = [
@@ -449,6 +460,10 @@ chardet = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+deepl = [
+    {file = "deepl-1.2.1-py3-none-any.whl", hash = "sha256:4a3fb948c1c10f09b2f604a449078ff647468d803d17d38b7f004c61d7f1d43f"},
+    {file = "deepl-1.2.1.tar.gz", hash = "sha256:f7efd38a1d0df3db77de56175109fdccf3f03a5481580e1d6e35c5be962c1b4b"},
 ]
 distlib = [
     {file = "distlib-0.3.3-py2.py3-none-any.whl", hash = "sha256:c8b54e8454e5bf6237cc84c20e8264c3e991e824ef27e8f1e81049867d861e31"},
